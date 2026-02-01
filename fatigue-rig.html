@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Fatigue Rig - Anson Mole</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Anson Mole</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <div class="container">
+                <a href="projects.html" class="back-link">← Back to Projects</a>
+                <h1>Dynamic Fatigue Rig</h1>
+                <p class="project-subtitle">HCL Bearing Validation for eVTOL Rotor Assemblies</p>
+                <div class="project-meta">
+                    <span class="meta-item"><strong>Duration:</strong> January 2024 - June 2024</span>
+                    <span class="meta-item"><strong>Role:</strong> Mechanical Engineering Co-op</span>
+                    <span class="meta-item"><strong>Company:</strong> BETA Technologies - Lift Kit Team</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="project-content-section">
+                <img src="images/fatigue-rig-assembled.jpg" alt="Dynamic Fatigue Rig" class="full-width-image">
+                
+                <h2>Project Overview</h2>
+                <p>During my first co-op at BETA Technologies, I was tasked with developing a <strong>dynamic fatigue rig</strong> to validate the bearings used in the rotor assemblies of the company's <strong>x250 eVTOL vertical lift propellers</strong>.</p>
+
+                <div class="highlight-box">
+                    <h3>The Challenge</h3>
+                    <p>While these rotors primarily generate lift in vertical flight, their horizontal orientation during forward flight introduces unique loading conditions. As the aircraft transitions, the <strong>advancing rotor blades experience higher aerodynamic loads than the retreating blades</strong>—a phenomenon known as <strong>asymmetric vibratory loading</strong>. This creates uneven cyclic stresses within the rotor system.</p>
+                </div>
+
+                <h2>Technical Problem</h2>
+                <p>The <strong>HCL bearings</strong> within the rotor assembly were identified as critical components subject to these asymmetric stresses. To ensure their reliability and prevent premature fatigue failures, I designed a test rig capable of:</p>
+                
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h4>Frequency Matching</h4>
+                        <p>Reproduce the correct resonant frequencies and vibratory modes experienced during operation</p>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>Realistic Loading</h4>
+                        <p>Generate accurate angular deflection profiles at predetermined rotor speeds</p>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>Sustained Testing</h4>
+                        <p>Apply sustained cyclic loading to evaluate long-term fatigue resistance</p>
+                    </div>
+                </div>
+
+                <h2>My Approach</h2>
+                
+                <div class="approach-section">
+                    <h3>1. System Modeling & Analysis</h3>
+                    <ul class="styled-list">
+                        <li><strong>Calculated masses and geometry</strong> needed to tune the rig's shaker arm to the system's resonant frequency</li>
+                        <li><strong>Ensured proper angular deflection profile</strong> at predetermined rotor speeds matching flight conditions</li>
+                        <li><strong>Validated analytical model</strong> against known rotor loading data from flight testing</li>
+                    </ul>
+                    <img src="images/rig-analysis.jpg" alt="Analysis Setup" class="content-image">
+                </div>
+
+                <div class="approach-section">
+                    <h3>2. Test Rig Development</h3>
+                    <ul class="styled-list">
+                        <li><strong>Designed dynamic loading mechanism</strong> to cyclically load bearings at representative frequencies</li>
+                        <li><strong>Integrated instrumentation</strong> for vibration, frequency, and angular deflection measurement</li>
+                        <li><strong>Calibrated rig output</strong> against analytical models to validate test fidelity</li>
+                        <li><strong>Built fixture assembly</strong> to mount bearings in realistic rotor hub configuration</li>
+                    </ul>
+                </div>
+
+                <div class="approach-section">
+                    <h3>3. Loading Conditions</h3>
+                    <p>Matched test loads to forward-flight asymmetric loading by modeling:</p>
+                    <ul class="styled-list">
+                        <li><strong>Cyclic bending moments</strong> from advancing/retreating blade imbalance</li>
+                        <li><strong>Radial stresses</strong> from centrifugal loading at operational RPM</li>
+                        <li><strong>Combined loading effects</strong> representing worst-case flight scenarios</li>
+                    </ul>
+                    <img src="images/loading-diagram.jpg" alt="Loading Conditions" class="content-image">
+                </div>
+
+                <div class="approach-section">
+                    <h3>4. Validation & Problem Solving</h3>
+                    <ul class="styled-list">
+                        <li><strong>Iteratively refined rig setup</strong> to reduce mechanical noise and ensure consistent vibratory amplitude</li>
+                        <li><strong>Ensured repeatability</strong> of test cycles to generate meaningful fatigue data</li>
+                        <li><strong>Developed testing protocol</strong> for accelerated life testing of multiple bearing samples</li>
+                        <li><strong>Documented results</strong> to inform bearing selection and rotor design decisions</li>
+                    </ul>
+                </div>
+
+                <h2>Design Features</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>Shaker Arm Assembly</h4>
+                        <p>Tuned mass-geometry to match rotor system resonance for accurate vibratory loading simulation</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Bearing Mounting Fixture</h4>
+                        <p>Replicates actual hub geometry to ensure bearing experiences realistic constraint conditions</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Instrumentation</h4>
+                        <p>Accelerometers and encoders for measuring vibration amplitude, frequency, and angular deflection</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Adjustable Loading</h4>
+                        <p>Variable drive system to test at multiple operating speeds and load conditions</p>
+                    </div>
+                </div>
+
+                <h2>Results & Impact</h2>
+                
+                <div class="results-section">
+                    <div class="result-metric">
+                        <span class="metric-value">✓ Validated</span>
+                        <span class="metric-label">HCL bearings confirmed for asymmetric loading</span>
+                    </div>
+                    <div class="result-metric">
+                        <span class="metric-value">De-Risked</span>
+                        <span class="metric-label">Improved confidence in x250 rotor reliability</span>
+                    </div>
+                    <div class="result-metric">
+                        <span class="metric-value">Scalable</span>
+                        <span class="metric-label">Rig design adaptable for other bearing geometries</span>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Engineering Contribution</h3>
+                    <p>This project provided essential validation data linking <strong>analytical rotor loading models → physical fatigue performance</strong>. The rig demonstrated that dynamic fatigue testing reveals long-term risks not visible in static load testing, ultimately improving the safety and reliability of BETA's eVTOL propulsion system.</p>
+                </div>
+
+                <h2>Technical Learnings</h2>
+                
+                <div class="learnings-section">
+                    <h3>Key Insights</h3>
+                    <ul class="styled-list">
+                        <li><strong>Vibratory systems analysis:</strong> Resonance, angular deflection, and fatigue loading require precise tuning to match operational conditions</li>
+                        <li><strong>Lab vs. field testing:</strong> Accurately reproducing flight conditions in a controlled lab environment requires both analytical rigor and physical iteration</li>
+                        <li><strong>Dynamic testing value:</strong> Cyclic fatigue testing reveals failure modes that static testing cannot predict, especially for rotating machinery</li>
+                        <li><strong>Aerodynamic effects:</strong> Translating asymmetric lift forces into mechanical test conditions requires deep understanding of rotor dynamics</li>
+                    </ul>
+
+                    <h3>Technical Skills Applied</h3>
+                    <ul class="styled-list">
+                        <li>Vibratory systems analysis (resonance, angular deflection, fatigue loads)</li>
+                        <li>Mechanical design of test rigs and cyclic loading systems</li>
+                        <li>Instrumentation and validation of dynamic test setups</li>
+                        <li>CAD modeling and structural analysis</li>
+                        <li>Test protocol development and data analysis</li>
+                    </ul>
+                </div>
+
+                <h2>Additional Projects at BETA (Co-op 1)</h2>
+                
+                <div class="other-projects">
+                    <div class="mini-project">
+                        <h4>Modular Propeller Packaging System</h4>
+                        <p>Developed a clamshell packaging system for shipping fragile internal propeller components and receiving the fully constructed propeller in the same box. Introduced thermoformed packaging methods to the manufacturing team.</p>
+                    </div>
+                    
+                    <div class="mini-project">
+                        <h4>Paint-Balancing Structure</h4>
+                        <p>Designed and built a fixture for propeller manufacturing that enables precision balancing after paint application, ensuring smooth operation at high RPM.</p>
+                    </div>
+                    
+                    <div class="mini-project">
+                        <h4>GD&T Development</h4>
+                        <p>Learned geometric dimensioning and tolerancing (GD&T) principles and applied them to engineering drawings for manufacturing communication.</p>
+                    </div>
+                </div>
+
+                <h2>Skills Demonstrated</h2>
+                <div class="skills-tags">
+                    <span class="skill-tag">Test Rig Design</span>
+                    <span class="skill-tag">Vibratory Analysis</span>
+                    <span class="skill-tag">Fatigue Testing</span>
+                    <span class="skill-tag">Rotor Dynamics</span>
+                    <span class="skill-tag">Instrumentation</span>
+                    <span class="skill-tag">CAD (SolidWorks)</span>
+                    <span class="skill-tag">Structural Analysis</span>
+                    <span class="skill-tag">eVTOL Systems</span>
+                    <span class="skill-tag">Aerospace Testing</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+
+                <div class="project-nav">
+                    <a href="fencing-robot.html" class="btn btn-secondary">← Previous Project</a>
+                    <a href="bao3000.html" class="btn btn-secondary">Next Project →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anson Mole. All rights reserved.</p>
+            <div class="social-links">
+                <a href="mailto:ansonmole@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/anson-mole" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ansonmole" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

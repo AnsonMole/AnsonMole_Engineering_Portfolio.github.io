@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAO3000 Production Oven - Anson Mole</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Anson Mole</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <div class="container">
+                <a href="projects.html" class="back-link">← Back to Projects</a>
+                <h1>BAO3000 - Bonded Assembly Oven</h1>
+                <p class="project-subtitle">Final Cure Production Oven for BETA Technologies Bonded Aircraft Wings</p>
+                <div class="project-meta">
+                    <span class="meta-item"><strong>Duration:</strong> January 2025 - June 2025</span>
+                    <span class="meta-item"><strong>Role:</strong> Lead Mechanical Engineer</span>
+                    <span class="meta-item"><strong>Company:</strong> BETA Technologies</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="project-content-section">
+                <img src="images/bao3000-cad.jpg" alt="BAO3000 CAD Rendering" class="full-width-image">
+                
+                <h2>Project Overview</h2>
+                <p>During my tenure at BETA Technologies, I led the design and construction of the BAO3000 production oven, a custom-built furnace capable of curing the company's newly developed bonded aircraft wing. This wing utilizes a structural epoxy adhesive that must be cured at 200+ °F for extended durations to achieve full strength.</p>
+
+                <div class="highlight-box">
+                    <h3>Key Challenge</h3>
+                    <p>Build a full-scale oven large enough to accommodate a <strong>50 ft × 8 ft × 8 ft aircraft wing</strong> while meeting <strong>AMS2750 Class 2 Type D furnace standards</strong> for aerospace production at a fraction of commercial costs ($250k–$500k).</p>
+                </div>
+
+                <h2>Technical Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h4>Temperature Uniformity</h4>
+                        <p>Precise control across nearly 3,000 ft³ of volume within ±10°F tolerance per AMS2750 standards</p>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>Controlled Heating</h4>
+                        <p>Managed ramp rates to protect bond integrity during cure cycles</p>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>Cost Constraints</h4>
+                        <p>Deliver aerospace-grade capability at <10% of commercial alternatives</p>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>Certification</h4>
+                        <p>Meet all AMS2750 testing requirements for production use</p>
+                    </div>
+                </div>
+
+                <h2>My Approach & Skills Applied</h2>
+                
+                <div class="approach-section">
+                    <h3>System Conceptualization & Analysis</h3>
+                    <ul class="styled-list">
+                        <li>Conducted heat transfer calculations to size heating elements and airflow distribution</li>
+                        <li>Selected structural materials (polyisocyanurate insulation, steel framing) to minimize heat loss and ensure safety</li>
+                        <li>Developed comprehensive SolidWorks CAD models of oven and all subassemblies</li>
+                    </ul>
+                    <img src="images/bao3000-diagram.jpg" alt="System Diagram" class="content-image">
+                </div>
+
+                <div class="approach-section">
+                    <h3>Heating & Controls Design</h3>
+                    <ul class="styled-list">
+                        <li>Selected and integrated two modified 30 kW salamander heaters (60 kW total, 6,200 CFM)</li>
+                        <li>Partnered with electrical engineer to replace stock contactors with externally mounted <strong>Silicon Controlled Rectifiers (SCRs)</strong>, enabling:
+                            <ul>
+                                <li>Fine resolution temperature control via PID loop integration</li>
+                                <li>Elimination of two major failure modes (contactor cycling)</li>
+                                <li>Variable voltage control for precise heating curves</li>
+                            </ul>
+                        </li>
+                        <li>Implemented 32 thermocouples with <strong>Opto22 Groov EPIC</strong> data acquisition/control system</li>
+                        <li>Created real-time monitoring interfaces using Node-RED and Groov View</li>
+                    </ul>
+                    <img src="images/controls-interface.jpg" alt="Control Interface" class="content-image">
+                </div>
+
+                <div class="approach-section">
+                    <h3>Airflow & Uniformity Engineering</h3>
+                    <ul class="styled-list">
+                        <li>Designed adjustable trunk air supply system with louvered registers, dampers, and blast gates</li>
+                        <li>Iteratively refined design based on thermal testing results until AMS2750 tolerance (±10°F) was achieved</li>
+                        <li>Balanced airflow across 48-foot length to ensure uniform heating of entire wing assembly</li>
+                    </ul>
+                    <div class="image-row">
+                        <img src="images/ducting-system.jpg" alt="Ducting System" class="half-width-image">
+                        <img src="images/airflow-diagram.jpg" alt="Airflow Analysis" class="half-width-image">
+                    </div>
+                </div>
+
+                <div class="approach-section">
+                    <h3>Leadership & Cost Control</h3>
+                    <ul class="styled-list">
+                        <li>Directed semi-weekly design reviews with cross-functional stakeholders</li>
+                        <li>Coordinated with materials engineers, controls engineers, and manufacturing technicians</li>
+                        <li>Managed project budget and procurement to deliver at <strong>$27,322</strong> total cost</li>
+                        <li>Led electrical engineer reporting to me on SCR integration and control system</li>
+                    </ul>
+                </div>
+
+                <h2>Problem Solving Examples</h2>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <h4>Non-Uniform Heating</h4>
+                        <p><strong>Solution:</strong> Redesigned trunk ducting and balanced airflow using adjustable dampers and blast gates until temperature spread was within ±10°F specification.</p>
+                    </div>
+                    <div class="problem-card">
+                        <h4>Temperature Overshoot</h4>
+                        <p><strong>Solution:</strong> Empirically tuned PID loop parameters through iterative testing to achieve stable control without oscillation.</p>
+                    </div>
+                    <div class="problem-card">
+                        <h4>Safety Concerns</h4>
+                        <p><strong>Solution:</strong> Added redundant over-temperature controllers, door-mounted status lights, and coordinated safety review with BETA's safety officer and South Burlington Fire Marshal.</p>
+                    </div>
+                </div>
+
+                <h2>Results & Impact</h2>
+                <div class="results-section">
+                    <div class="result-metric">
+                        <span class="metric-value">✓ Certified</span>
+                        <span class="metric-label">Passed all AMS2750 testing (TUS, SAT, TC Calibration)</span>
+                    </div>
+                    <div class="result-metric">
+                        <span class="metric-value">$27,322</span>
+                        <span class="metric-label">Total project cost</span>
+                    </div>
+                    <div class="result-metric">
+                        <span class="metric-value">$250k+ Saved</span>
+                        <span class="metric-label">vs. commercial alternatives</span>
+                    </div>
+                    <div class="result-metric">
+                        <span class="metric-value">✈️ Flight Ready</span>
+                        <span class="metric-label">Successfully cured wing now flying on functioning aircraft</span>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Functional Performance</h3>
+                    <p>The oven successfully cured BETA's bonded wing, proving the viability of the adhesive bonding process for future production aircraft. This achievement validated the novel manufacturing approach and enabled scalable production.</p>
+                </div>
+
+                <h2>Technical Specifications</h2>
+                <div class="specs-table">
+                    <table>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>External Dimensions</td>
+                            <td>48.9 ft L × 11.2 ft W × 8.3 ft H</td>
+                        </tr>
+                        <tr>
+                            <td>Internal Dimensions</td>
+                            <td>48.2 ft L × 7.6 ft W × 8.1 ft H</td>
+                        </tr>
+                        <tr>
+                            <td>Internal Volume</td>
+                            <td>2,961 ft³</td>
+                        </tr>
+                        <tr>
+                            <td>Working Volume</td>
+                            <td>2,226 ft³</td>
+                        </tr>
+                        <tr>
+                            <td>Heating Power</td>
+                            <td>60 kW (2× 30 kW heaters)</td>
+                        </tr>
+                        <tr>
+                            <td>Airflow</td>
+                            <td>6,200 CFM (3,100 CFM per heater)</td>
+                        </tr>
+                        <tr>
+                            <td>Temperature Control</td>
+                            <td>±10°F uniformity (AMS2750 Class 2 Type D)</td>
+                        </tr>
+                        <tr>
+                            <td>Thermocouples</td>
+                            <td>32 K-type (oven control) + 26-30 (part monitoring)</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>Key Components & Systems</h2>
+                <div class="components-section">
+                    <h3>Structural Assembly</h3>
+                    <ul class="styled-list">
+                        <li><strong>Wall Panels:</strong> 20× modular panels, each with 2× 2" polyisocyanurate insulation sheets, steel studs and tracks</li>
+                        <li><strong>Door:</strong> Hinged panel with swivel caster wheels, grab latches, weather stripping, and status light</li>
+                        <li><strong>Frame:</strong> Steel structural frame with 80/20 aluminum mounting surfaces</li>
+                    </ul>
+
+                    <h3>Heating System</h3>
+                    <ul class="styled-list">
+                        <li><strong>Heaters:</strong> 2× Dayton 784JJ2A 30kW salamander heaters (modified)</li>
+                        <li><strong>Ducting:</strong> Custom trunk system with adjustable registers and dampers</li>
+                        <li><strong>Power Control:</strong> External SCRs replacing stock contactors for variable voltage control</li>
+                    </ul>
+
+                    <h3>Control & Monitoring</h3>
+                    <ul class="styled-list">
+                        <li><strong>Controller:</strong> Opto22 Groov EPIC PR1 Processor</li>
+                        <li><strong>I/O Modules:</strong> 3× ITM-12 thermocouple input modules, multifunction mixed signal module</li>
+                        <li><strong>Safety:</strong> ProSense SCU-3100 limit alarm with independent over-temp protection</li>
+                        <li><strong>Interface:</strong> Custom Groov View HMI and Node-RED dashboard for monitoring</li>
+                    </ul>
+                </div>
+
+                <h2>Documentation</h2>
+                <p>Comprehensive technical documentation was created for this project, including:</p>
+                <ul class="styled-list">
+                    <li>Full CAD assembly and detailed part drawings (SolidWorks)</li>
+                    <li>Complete bill of materials with sourcing information</li>
+                    <li>Wiring diagrams and electrical schematics</li>
+                    <li>Operating procedures and work instructions</li>
+                    <li>Preventative maintenance schedule</li>
+                    <li>AMS2750 certification compliance procedures</li>
+                    <li>Troubleshooting guide</li>
+                </ul>
+
+                <div class="cta-section">
+                    <h3>View Full Documentation</h3>
+                    <p>For detailed technical documentation including CAD files, complete system analysis, and certification records:</p>
+                    <a href="documents/BAO3000-Full-Documentation.pdf" class="btn btn-primary" download>Download Full Project Report</a>
+                </div>
+
+                <h2>Skills Demonstrated</h2>
+                <div class="skills-tags">
+                    <span class="skill-tag">Thermal System Design</span>
+                    <span class="skill-tag">Heat Transfer Analysis</span>
+                    <span class="skill-tag">CAD Modeling (SolidWorks)</span>
+                    <span class="skill-tag">Control Systems</span>
+                    <span class="skill-tag">PID Loop Tuning</span>
+                    <span class="skill-tag">Aerospace Standards (AMS2750)</span>
+                    <span class="skill-tag">Project Leadership</span>
+                    <span class="skill-tag">Cross-functional Coordination</span>
+                    <span class="skill-tag">Cost Engineering</span>
+                    <span class="skill-tag">Technical Documentation</span>
+                    <span class="skill-tag">System Integration</span>
+                    <span class="skill-tag">Airflow Management</span>
+                </div>
+
+                <div class="project-nav">
+                    <a href="fatigue-rig.html" class="btn btn-secondary">← Previous Project</a>
+                    <a href="fencing-robot.html" class="btn btn-secondary">Next Project →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anson Mole. All rights reserved.</p>
+            <div class="social-links">
+                <a href="mailto:ansonmole@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/anson-mole" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ansonmole" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
