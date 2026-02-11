@@ -207,7 +207,7 @@ body {
 }
 
 /* ==================== */
-/* Featured Projects */
+/* Featured Projects - CORRECTED */
 /* ==================== */
 
 .featured-projects {
@@ -299,7 +299,6 @@ body {
     padding: var(--spacing-md);
     background-color: var(--bg-secondary);
     border-radius: var(--radius-md);
-    border: 1px solid var(--border-color);
 }
 
 .stat {

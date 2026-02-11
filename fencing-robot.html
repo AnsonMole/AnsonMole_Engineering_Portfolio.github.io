@@ -58,7 +58,7 @@
                 </ul>
 
                 <h2>System Overview</h2>
-                <img src="images/fencing-cad-labeled.jpg" alt="System Breakdown" class="full-width-image">
+                <img src="images/fencing-cad-labeled.png" alt="System Breakdown" class="full-width-image">
                 
                 <div class="system-components">
                     <div class="component-card">
@@ -79,22 +79,38 @@
                     </div>
                 </div>
 
+                <h2>Robot in Action</h2>
+                <p>Watch FR3D demonstrate human-level dynamic motion and perform fencing drills:</p>
+                
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="500" 
+                        src="https://www.youtube.com/embed/DXln3rK99F0?si=msn5KWLpD3nBzFFS" 
+                        title="FR3D Robotic Fencing Partner Demonstration" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
                 <h2>My Contributions</h2>
                 <p>As part of a 6-person capstone team, my primary responsibilities included:</p>
                 
                 <div class="contributions-section">
                     <h3>Design & Analysis</h3>
                     <ul class="styled-list">
+                        <li>Conducted significant research on development of robotic wrist and arm assemblies</li>
                         <li>Co-developed motion capture analysis methodology and post-processing pipeline</li>
-                        <li>Created Simscape dynamic models to determine motor torque requirements</li>
                         <li>Designed and iterated on fixed passive arm structure for maximum rigidity</li>
-                        <li>Performed FEA on critical components (PS shaft, pulleys, offset plate)</li>
+                        <li>Designed anatomically proportional base structure for mounting electronics, stationary arm and aesthetic features</li>
+                        <li>Produced project documentation and wrote executive summary</li>
                     </ul>
 
                     <h3>Mechanical Systems</h3>
                     <ul class="styled-list">
-                        <li>Led design of pronation/supination joint including transmission selection</li>
-                        <li>Sized and specified bearings, shafts, and structural components</li>
+                        <li>Design of pronation/supination joint including transmission selection</li>
+                        <li>Selected mechanisms for optimal power output under evaluated trajectory paths</li>
                         <li>Developed manufacturing drawings and coordinated fabrication</li>
                         <li>Conducted assembly and integration of wrist mechanism</li>
                     </ul>
@@ -102,8 +118,8 @@
                     <h3>Testing & Validation</h3>
                     <ul class="styled-list">
                         <li>Performed structural load testing and identified failure modes</li>
-                        <li>Conducted safety analysis and pressure calculations for blade impacts</li>
-                        <li>Assisted with controller tuning and trajectory tracking validation</li>
+                        <li>Testing of arm and base assembly under static and vibratory loading</li>
+                        <li>PID Controller tuning and trajectory tracking validation</li>
                     </ul>
                 </div>
 
@@ -115,7 +131,6 @@
                         <div class="timeline-content">
                             <h4>Motion Capture Analysis</h4>
                             <p>Collected fencing motion data using Northeastern's motion capture lab (300 Hz, 19 cameras). Post-processed using MoCap Toolbox and custom MATLAB scripts to isolate wrist motion and generate robot trajectories.</p>
-                            <img src="images/mocap-setup.jpg" alt="Motion Capture Setup" class="timeline-image">
                         </div>
                     </div>
 
@@ -124,7 +139,6 @@
                         <div class="timeline-content">
                             <h4>Wrist Mechanism Selection</h4>
                             <p>Evaluated 6 candidate mechanisms using a weighted decision matrix (12 criteria including torque, ROM, controllability, manufacturability). Selected XYZ differential + base roll configuration.</p>
-                            <img src="images/decision-matrix.jpg" alt="Wrist Selection" class="timeline-image">
                         </div>
                     </div>
 
@@ -133,7 +147,6 @@
                         <div class="timeline-content">
                             <h4>Dynamic Simulation</h4>
                             <p>Built Simscape model with accurate mass/inertia properties. Filtered motion capture data and ran dynamic analysis to determine motor torque requirements for each joint.</p>
-                            <img src="images/simscape-model.jpg" alt="Dynamic Analysis" class="timeline-image">
                         </div>
                     </div>
 
@@ -142,7 +155,6 @@
                         <div class="timeline-content">
                             <h4>Motor & Transmission Selection</h4>
                             <p>Plotted motor operating regimes and overlaid torque/speed requirements to select ODrive M8325S (2:1 GR) and MJbots MJ5208 (4:1 GR) motors. Ultra-low gear ratios enable high bandwidth and backdrivability.</p>
-                            <img src="images/motor-selection.jpg" alt="Motor Analysis" class="timeline-image">
                         </div>
                     </div>
 
@@ -152,8 +164,6 @@
                             <h4>Detailed Design & Analysis</h4>
                             <p>Created full CAD assembly in SolidWorks. Performed FEA on critical components to verify structural integrity under worst-case loading (blade impacts at max motor torque).</p>
                             <div class="image-row">
-                                <img src="images/fea-shaft.jpg" alt="Shaft FEA" class="half-width-image">
-                                <img src="images/fea-pulley.jpg" alt="Pulley FEA" class="half-width-image">
                             </div>
                         </div>
                     </div>
@@ -163,7 +173,6 @@
                         <div class="timeline-content">
                             <h4>Fabrication & Assembly</h4>
                             <p>Machined custom aluminum shafts and hubs. 3D printed structural components (CF-PLA, 50% infill). Assembled wrist mechanism and integrated motors, belts, and encoders.</p>
-                            <img src="images/assembly-process.jpg" alt="Assembly" class="timeline-image">
                         </div>
                     </div>
 
@@ -172,7 +181,6 @@
                         <div class="timeline-content">
                             <h4>Controller Tuning & Testing</h4>
                             <p>Developed Python control software using Moteus library. Empirically tuned PID gains by running step responses and progressively increasing trajectory speeds (0.1x → 1.0x). Achieved high-fidelity tracking at full human speeds.</p>
-                            <img src="images/tracking-performance.jpg" alt="Trajectory Tracking" class="timeline-image">
                         </div>
                     </div>
                 </div>
@@ -187,13 +195,13 @@
                         <li><strong>Motor 1 + Motor 2 in opposite directions</strong> → Pure sweeping motion (flexion/extension)</li>
                         <li><strong>Any combination</strong> → Smooth 2-DoF motion within a compact package</li>
                     </ul>
-                    <img src="images/differential-diagram.jpg" alt="Differential Mechanism" class="content-image">
+                    <img src="images/FR3D-differential.jpg" alt="Differential Mechanism" class="content-image">
 
                     <h3>Key Design Features</h3>
                     <ul class="styled-list">
                         <li><strong>4:1 Gear Reduction:</strong> Dual MJbots MJ5208 motors with 18T → 72T GT3 3mm-pitch belts</li>
                         <li><strong>Belt Preload:</strong> ~50 N tension to prevent slack and ensure high torque transmission</li>
-                        <li><strong>3D-Printed Bevel Gears:</strong> CF-PLA with custom aluminum hubs for weight reduction</li>
+                        <li><strong>3D-Printed Bevel Gears:</strong> CF-PLA with custom aluminum hubs for weight reduction and cost mitigation</li>
                         <li><strong>100mm Blade Offset:</strong> Mimics average human wrist geometry for realistic motion</li>
                         <li><strong>Safety Guard:</strong> Prevents blade from being pinched into pulley/belt interface</li>
                     </ul>
@@ -212,7 +220,6 @@
                         <li><strong>Shaft Design:</strong> Custom machined aluminum shaft with hollow center for wire routing</li>
                         <li><strong>Bearings:</strong> Double-supported flanged bearings on each shaft for rigidity</li>
                     </ul>
-                    <img src="images/ps-joint-detail.jpg" alt="PS Joint" class="content-image">
                 </div>
 
                 <h2>Safety Analysis</h2>
@@ -307,7 +314,7 @@
                         <li>Rapid direction changes and high accelerations</li>
                         <li>Sustained cyclic movements for extended periods</li>
                     </ul>
-                    <img src="images/tracking-results.jpg" alt="Tracking Performance" class="content-image">
+                    <img src="images/FR3D-accuracy-graph.jpg" alt="Tracking Performance" class="content-image">
                 </div>
 
                 <h3>Qualitative Success Metrics</h3>
@@ -359,7 +366,6 @@
                         <li><strong>Teleoperation:</strong> Control via custom IMU-based controller (Raspberry Pi Pico + BNO055)</li>
                         <li><strong>Waypoint Following:</strong> Execute programmed sequences of target positions</li>
                     </ul>
-                    <img src="images/software-interface.jpg" alt="Control Software" class="content-image">
                 </div>
 
                 <h2>Future Work & Exit Strategy</h2>
@@ -367,7 +373,7 @@
                 <div class="future-work">
                     <h3>Potential Improvements</h3>
                     <ul class="styled-list">
-                        <li>Develop full system model through system identification for optimized control gains</li>
+                        <li>Develop full system model through system identification to calculate optimized control gains</li>
                         <li>Explore cable-based differential mechanism to reduce weight</li>
                         <li>Design more compact wrist mechanism for improved inertial properties</li>
                         <li>Program autonomous training routines with adaptive difficulty</li>
@@ -408,7 +414,7 @@
 
                 <div class="cta-section">
                     <h3>Learn More</h3>
-                    <p>For complete technical documentation including motion capture data, CAD files, and control code:</p>
+                    <p>Explore our Executive Summary which does a deep dive into the technical aspects of this project:</p>
                     <a href="documents/FR3D-Executive-Summary.pdf" class="btn btn-primary" download>Download Executive Summary</a>
                 </div>
 
